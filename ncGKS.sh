@@ -1,8 +1,11 @@
 #!/bin/bash
+# Author: Robert Jesse Chen <me@fernjager.net>
+# Version: 1.0.0 - 2013/11/10
+# Description: Standalone PGP Public Keyserver
 
-# User tweakable settings
+# User tweakable settings. Seriously though, it's all plaintext below- feel free to poke around
 TIMEOUT=5		 			# How many seconds should elapse before disconnect? POST fails with less than 5
-REQUEST_SIZE_LIMIT=64000 	# 64K should be enough for anyone!
+REQUEST_SIZE_LIMIT=64000 	# Limit request size
 SEARCH_TERM_MAX_LENGTH=50	# Limit search term length
 SEARCH_TERM_MIN_LENGTH=1    # Minium search term length
 GPG_OPTIONS=				# i.e. Use your own keychain w/ GPG_OPTIONS=--homedir /dir/to/customkeychain
@@ -302,13 +305,13 @@ do
 			<b>How do I add this keyserver?</b><br>
 			<i>In ~/.gnupg/config, add \"keyserver hkp://this-server-address\"</i><br><br>
 
-			<b>How do I search for a key from the keyserver from GnuPG?</b><br>
+			<b>How do I search for a key from the keyserver from the command line (GnuPG)?</b><br>
 			<i>gpg --search-key &lt;keywords&gt;</i><br><br>
 
-			<b>How do I send a key to the keyserver from GnuPG?</b><br>
+			<b>How do I send a key to the keyserver from the command line (GnuPG)?</b><br>
 			<i>gpg --send-key &lt;951EE9FB&gt;</i><br><br>
 
-			<b>How do I retrieve a key from the keyserver from GnuPG?</b><br>
+			<b>How do I retrieve a key from the keyserver from the command line (GnuPG)?</b><br>
 			<i>gpg --recv-key &lt;951EE9FB&gt;</i><br><br>
 		</p>
 
