@@ -4,11 +4,11 @@
 # Description: Standalone PGP Public Keyserver
 
 # User tweakable settings. Seriously though, it's all plaintext below- feel free to poke around
-TIMEOUT=5		 			# How many seconds should elapse before disconnect? POST fails with less than 5
+TIMEOUT=5                       # How many seconds should elapse before disconnect? POST fails with less than 5
 REQUEST_SIZE_LIMIT=64000 	# Limit request size
 SEARCH_TERM_MAX_LENGTH=50	# Limit search term length
-SEARCH_TERM_MIN_LENGTH=1    # Minium search term length
-GPG_OPTIONS=				# i.e. Use your own keychain w/ GPG_OPTIONS=--homedir /dir/to/customkeychain
+SEARCH_TERM_MIN_LENGTH=1        # Minium search term length
+GPG_OPTIONS=			# i.e. Use your own keychain w/ GPG_OPTIONS=--homedir /dir/to/customkeychain
 
 # Other constants
 VERSION="1.0.0"
